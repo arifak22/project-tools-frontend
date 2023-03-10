@@ -16,12 +16,12 @@ const Notification = () => {
 
   useEffect(() => {
     if (notification?.title ){
-     notify();
-     console.log('notification', notification);
+        notify();
     }
-    console.log('notification', notification);
-
   }, [notification])
+  useEffect(() => {
+    console.log('notif run')
+  },[]);
 
 
   onMessageListener()

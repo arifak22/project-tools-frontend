@@ -21,11 +21,10 @@ const messaging = getMessaging();
 
 
 export const getTokenFromRequest = async () =>{
-  let result = await getToken(messaging, { vapidKey: process.env.REACT_APP_FIREBASE_VAPID_KEY })
+  let result = await getToken(messaging, { vapidKey: `BPlgOE-dzNOLPVx6BMUIJc6SxPHBj8wvzhAxhYHwd28onRXv0MEkgPL9jCEVB5z7vEJDqiBLdMg5i8mLPb_8Dxk` })
     .then((currentToken) => {
        return currentToken;
     })
-    console.log(result)
     return result;
 }
 
